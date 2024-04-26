@@ -17,7 +17,6 @@ async function bootstrap() {
   app.useGlobalFilters(new RPCExceptionFilter());
 
   await app.listen(envs.port);
-  console.log('Test');
 
   logger.log(`Gateway is running on port: ${envs.port}`);
 }
